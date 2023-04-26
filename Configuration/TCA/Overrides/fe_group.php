@@ -16,7 +16,5 @@ defined('TYPO3') or die();
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
    'fe_group',
-   'tx_homeinfo_cid',
-   '',
-   'after:password'
+   'tx_homeinfo_cid'
 );
