@@ -2,7 +2,7 @@
 defined('TYPO3') or die();
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
-    'be_group',
+    'be_groups',
     [
         'tx_homeinfo_cid' => [
             'exclude' => 0,
@@ -16,6 +16,6 @@ defined('TYPO3') or die();
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-   'be_group',
+   'be_groups',
    'tx_homeinfo_cid',
 );
