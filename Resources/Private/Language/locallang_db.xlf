@@ -6,6 +6,10 @@
             <authorEmail>info@homeinfo.de</authorEmail>
         </header>
         <body>
+            <trans-unit id="fe_group.tx_homeinfo_cid">
+                <source>Kundennummer</source>
+                <target>Customer ID</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
