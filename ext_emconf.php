@@ -2,7 +2,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'CIDMap',
-    'description' => 'Map user groups to customer IDs.',
+    'description' => 'Map user groups to HOMEINFO customer IDs.',
     'version' => '1.0.0',
     'category' => 'services',
     'constraints' => [
