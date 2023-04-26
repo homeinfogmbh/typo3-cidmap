@@ -7,8 +7,8 @@
         </header>
         <body>
             <trans-unit id="tx_homeinfo_cid">
-                <source>Kundennummer</source>
-                <target>Customer ID</target>
+                <source>Customer ID</source>
+                <target>Kundennummer</target>
             </trans-unit>
         </body>
     </file>
