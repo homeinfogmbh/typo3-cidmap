@@ -6,7 +6,7 @@ defined('TYPO3') or die();
     [
         'tx_homeinfo_cid' => [
             'exclude' => 0,
-            'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_homeinfo_cid'
+            'label' => 'LLL:EXT:cidmap/Resources/Private/Language/locallang_db.xlf:tx_homeinfo_cid'
         ]
     ]
 );
