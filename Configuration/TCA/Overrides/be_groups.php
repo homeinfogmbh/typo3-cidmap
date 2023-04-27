@@ -6,6 +6,9 @@ defined('TYPO3') or die();
     [
         'tx_homeinfo_cid' => [
             'exclude' => 0,
+            'config' => [
+                'type' => 'input'
+            ],
             'label' => 'LLL:EXT:cidmap/Resources/Private/Language/locallang_db.xlf:tx_homeinfo_cid'
         ]
     ]
