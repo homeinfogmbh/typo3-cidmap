@@ -9,5 +9,7 @@ class DebugController extends ActionController
     public function debugAction()
     {
         \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($GLOBALS['BE_USER'], 'BE User:');
+        // Array of all BE user's groups:
+        // $GLOBALS['BE_USER']->userGroupsUID
     }
 }
