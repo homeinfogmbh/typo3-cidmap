@@ -5,6 +5,6 @@ defined('TYPO3_MODE') || die();
     'cidmap',
     'Debug',
     [
-        \Homeinfo\cidmap\Controller\DebugController::class => 'debugAction',
+        \Homeinfo\cidmap\Controller\DebugController::class => 'debug',
     ],
 );
