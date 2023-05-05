@@ -6,9 +6,8 @@ use Generator;
 
 use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Domain\Repository\BackendUserGroupRepository;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
-
-use Homeinfo\cidmap\Domain\Repository\BackendUserGroupRepository;
 
 class BackendCIDMapper
 {
