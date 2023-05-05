@@ -10,7 +10,7 @@ class DebugController extends ActionController
 {
     public function debugAction()
     {
-        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($GLOBALS['BE_USER'], "Backend User:");
+        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($GLOBALS['TCA'], "TCA:");
 
         $cidMapper = new BackendCIDMapper();
         $cids = iterator_to_array($cidMapper->getCurrentUserCIDs());
