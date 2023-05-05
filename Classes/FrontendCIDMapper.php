@@ -4,9 +4,9 @@ namespace Homeinfo\cidmap;
 
 use Generator;
 
-use TYPO3\CMS\Core\Authentication\FrontendUserAuthentication;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
+use TYPO3\CMS\Frontend\Authentication\FrontendUserAuthentication;
 
 use Homeinfo\cidmap\Domain\Repository\FrontendUserGroupRepository;
 
