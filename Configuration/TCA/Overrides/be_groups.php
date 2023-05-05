@@ -18,3 +18,7 @@ defined('TYPO3') or die();
    'be_groups',
    'tx_homeinfo_cid',
 );
+
+$GLOBALS['BE_USER']['userGroupCID'] = [
+    'showitem' => 'tx_homeinfo_cid'
+];
