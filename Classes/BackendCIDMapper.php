@@ -29,6 +29,7 @@ class BackendCIDMapper
     {
         $query = $this->backendUserGroupRepository->createQuery();
         return $query
+            ->select('*')
             ->where(
                 $queryBuilder->expr()->eq(
                     'uid',
