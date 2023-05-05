@@ -32,7 +32,9 @@ class BackendCIDMapper
         return $query
             ->matching(
                 $query->in('uid', Self::getCurrentUserGroupUIDs())
-            )->executeQuery()->fetchAll();
+            )
+            ->execute()
+            ->fetchAll();
     }
 
     private static function getCurrentUserGroupUIDs(): array
