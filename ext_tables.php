@@ -12,7 +12,7 @@ defined('TYPO3_MODE') || die();
     ],
     [
         'access' => 'user',
-        'labels' => 'Debug Backend',
+        'labels' => 'LLL:EXT:cidmap/Resources/Private/Language/locallang_be.xlf:usercids.label',
         'inheritNavigationComponentFromMainModule' => false,
         'standalone' => true,
     ]
