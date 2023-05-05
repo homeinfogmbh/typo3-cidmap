@@ -24,7 +24,6 @@ class BackendCIDMapper
     public function getCurrentUserCIDs(): Generator
     {
         foreach ($this->getCurrentUserGroups() as &$group)
-            \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($group, "Group:");
             yield $group->tx_homeinfo_cid;
     }
 
