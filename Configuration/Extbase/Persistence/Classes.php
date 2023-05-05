@@ -3,6 +3,11 @@ declare(strict_types = 1);
 
 return [
     \Homeinfo\cidmap\Domain\Model\BackendUserGroup::class => [
-        'tableName' => 'be_groups'
+        'tableName' => 'be_groups',
+        'properties' => [
+            'tx_homeinfo_cid' => [
+                'fieldName' => 'tx_homeinfo_cid'
+            ]
+        ]
     ]
 ];
