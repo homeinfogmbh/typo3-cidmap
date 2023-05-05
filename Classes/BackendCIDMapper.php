@@ -30,7 +30,7 @@ class BackendCIDMapper
         $query = $this->backendUserGroupRepository->createQuery();
         return $query
             ->matching(
-                $query->equals('uid', Self::getCurrentUserGroupUIDs())
+                $query->in('uid', Self::getCurrentUserGroupUIDs())
             )->executeQuery()->fetchAll();
     }
 
