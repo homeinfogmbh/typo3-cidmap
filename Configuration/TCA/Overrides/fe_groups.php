@@ -18,3 +18,7 @@ defined('TYPO3') or die();
    'fe_groups',
    'tx_homeinfo_cid'
 );
+
+$GLOBALS['TCA']['fe_groups']['palettes']['tx_homeinfo_cid'] = [
+    'showitem' => 'tx_homeinfo_cid'
+];
