@@ -29,11 +29,10 @@ class BackendCIDMapper
     {
         $query = $this->backendUserGroupRepository->createQuery();
         return $query
-            ->select('*')
-            ->where(
-                $queryBuilder->expr()->eq(
+            ->matching(
+                $query->expr()->eq(
                     'uid',
-                    $queryBuilder->createNamedParameter(Self::getCurrentUserGroupUIDs(), Connection::PARAM_INT_ARRAY)
+                    $query->createNamedParameter(Self::getCurrentUserGroupUIDs(), Connection::PARAM_INT_ARRAY)
                 )
             )->executeQuery()->fetchAll();
     }
