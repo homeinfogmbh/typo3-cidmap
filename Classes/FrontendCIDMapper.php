@@ -4,7 +4,7 @@ namespace Homeinfo\cidmap;
 
 use Generator;
 
-use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
+use TYPO3\CMS\Core\Authentication\FrontendUserAuthentication;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
 
@@ -41,15 +41,14 @@ class FrontendCIDMapper
 
     private static function getCurrentUserGroupUIDs(): array
     {
-        if (($groupUIDs = Self::getCurrentUser()->userGroupsUID) === NULL)
+        if (($groupUIDs = Self::getCurrentUser()->userGroups) === NULL)
             return [];
 
         return $groupUIDs;
     }
 
-    private static function getCurrentUser(): BackendUserAuthentication
+    private static function getCurrentUser(): FrontendUserAuthentication
     {
-        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($GLOBALS['TSFE']->fe_user, 'FE User:');
-        return $GLOBALS['FE_USER'];
+        return $GLOBALS['TSFE']->fe_user;
     }
 }
