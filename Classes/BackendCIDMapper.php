@@ -5,6 +5,7 @@ namespace Homeinfo\cidmap;
 use Generator;
 
 use TYPO3\CMS\Beuser\Domain\Repository\BackendUserGroupRepository;
+use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
 
@@ -42,7 +43,7 @@ class BackendCIDMapper
         return $groupUIDs;
     }
 
-    private static function getCurrentUser(): array
+    private static function getCurrentUser(): BackendUserAuthentication
     {
         return $GLOBALS['BE_USER'];
     }
