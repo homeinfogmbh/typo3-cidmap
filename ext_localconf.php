@@ -3,9 +3,16 @@ defined('TYPO3_MODE') || die();
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'cidmap',
-    'Debug',
+    'DebugBackend',
     [
-        \Homeinfo\cidmap\Controller\DebugController::class => 'debugBackend',
-        \Homeinfo\cidmap\Controller\DebugController::class => 'debugFrontend',
-    ],
+        \Homeinfo\cidmap\Controller\DebugController::class => 'debugBackend'
+    ]
+);
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    'cidmap',
+    'DebugFrontend',
+    [
+        \Homeinfo\cidmap\Controller\DebugController::class => 'debugFrontend'
+    ]
 );

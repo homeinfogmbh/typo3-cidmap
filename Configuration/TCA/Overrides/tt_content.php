@@ -7,6 +7,6 @@ defined('TYPO3') or die();
 
 ExtensionUtility::registerPlugin(
     'cidmap',
-    'Debug',
+    'DebugFrontend',
     "View of customer IDs"
 );
