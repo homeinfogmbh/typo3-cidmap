@@ -24,7 +24,8 @@ class BackendCIDMapper
     public function getCurrentUserCIDs(): Generator
     {
         foreach ($this->getCurrentUserGroups() as &$group)
-            yield $group->tx_homeinfo_cid;
+            if (($cid = $group->tx_homeinfo_cid) !== NULL)
+                yield $cid;
     }
 
     private function getCurrentUserGroups(): array
