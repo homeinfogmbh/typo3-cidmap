@@ -1,6 +1,6 @@
 <?php
 
-namespace Homeinfo\cidmap\Controller;
+namespace Homeinfo\cidmap;
 
 use Generator;
 
