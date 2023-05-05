@@ -49,6 +49,7 @@ class FrontendCIDMapper
 
     private static function getCurrentUser(): BackendUserAuthentication
     {
+        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($GLOBALS, 'Globals:');
         return $GLOBALS['FE_USER'];
     }
 }
