@@ -30,11 +30,12 @@ class FrontendCIDMapper
 
     private function getCurrentUserGroups(): array
     {
+        if (empty($groupUIDs = Self::getCurrentUserGroupUIDs()))
+            return [];
+
         $query = $this->frontendUserGroupRepository->createQuery();
         return $query
-            ->matching(
-                $query->in('uid', Self::getCurrentUserGroupUIDs())
-            )
+            ->matching($query->in('uid', $groupUIDs))
             ->execute()
             ->toArray();
     }
